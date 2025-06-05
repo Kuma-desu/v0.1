@@ -1,0 +1,90 @@
+/* 🌸 Global Style UwU 🌸 */
+body {
+  font-family: 'Comic Sans MS', 'Quicksand', cursive;
+  background: linear-gradient(145deg, #ffdde1, #ee9ca7),
+              url('Justin-Timberlake.png') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #fffafc;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* 🎀 Container-nya gemoy banget */
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 192, 203, 0.3);
+  padding: 30px;
+  border: 2px dashed #fff8fb;
+}
+
+/* 🌟 Judul Super Imut */
+.cute-heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', 'Quicksand', cursive;
+  background: linear-gradient(90deg, #ffaad4, #ffd6ec, #ffe3a3, #caffbf, #a0c4ff, #bdb2ff, #ffc6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Hapus efek blur dari text-shadow dan ganti dengan outline */
+  text-shadow: none;
+
+  /* Tambah outline supaya teks jelas */
+  -webkit-text-stroke: 1px #ff69b4; /* Outline pink cantik */
+  text-stroke: 1px #ff69b4;
+
+  /* Animasi glow tetap dipertahankan */
+  animation: rainbow-glow 4s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+/* 🎶 Lirik Area UwU */
+#lyrics-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 💫 Baris lirik biasa */
+.lyric-line {
+  opacity: 0.4;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ✨ Baris lirik aktif */
+.lyric-line.active {
+  background-color: #fff0f6;
+  color: #ff69b4;
+  font-weight: bold;
+  font-size: 1.3rem;
+  opacity: 1;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Style */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .lyric-line.active {
+    font-size: 1.2rem;
+  }
+
+  .cute-heading {
+    font-size: 1.8rem;
+  }
+}
